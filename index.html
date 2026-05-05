@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mosque of Brownwood</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">Mosque of Brownwood</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#vision">Vision</a>
+    <a href="#involved">Get Involved</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <button class="donate-top">Donate</button>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Future Home of<br> Mosque of Brownwood</h1>
+    <p class="year">2027</p>
+    <p class="arabic">ومن بنى مسجداً لله بنى الله له بيتاً في الجنة</p>
+
+    <button class="cta">Learn More About Our Vision</button>
+
+    <!-- your chaotic feature -->
+    <div class="btn-group">
+      <button onclick="openModal(0)">Extra 1</button>
+      <button onclick="openModal(1)">Extra 2</button>
+      <button onclick="openModal(2)">Extra 3</button>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="feature">A Place of Worship</div>
+  <div class="feature">A Place for Community</div>
+  <div class="feature">A Legacy of Good</div>
+  <div class="feature">Be Part of the Build</div>
+</section>
+
+<!-- VISION -->
+<section id="vision" class="section dark">
+  <div>
+    <h2>Our Vision</h2>
+    <p>To establish a welcoming mosque serving Brownwood and beyond.</p>
+    <button>About Our Project</button>
+  </div>
+
+  <div>
+    <h2>Help Us Reach Our Goal</h2>
+    <p>$1,250,000 of $2,500,000</p>
+    <div class="progress">
+      <div class="bar"></div>
+    </div>
+    <button class="donate">Donate Now</button>
+  </div>
+
+  <div>
+    <h2>Stay Connected</h2>
+    <input placeholder="Your email address">
+    <button>Subscribe</button>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <span class="close" onclick="closeModal()">×</span>
+  <img id="modalImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: #0f3d2e;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.donate-top {
+  background: #c9a54c;
+  border: none;
+  padding: 8px 15px;
+}
+
+/* HERO */
+.hero {
+  background: url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f') center/cover;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  color: #0f3d2e;
+}
+
+.hero-content {
+  background: rgba(255,255,255,0.8);
+  padding: 20px;
+  max-width: 400px;
+}
+
+.year {
+  font-size: 24px;
+}
+
+.cta {
+  background: #0f3d2e;
+  color: white;
+  padding: 10px;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.feature {
+  text-align: center;
+}
+
+/* DARK SECTION */
+.section.dark {
+  display: flex;
+  justify-content: space-around;
+  background: #0f3d2e;
+  color: white;
+  padding: 40px;
+}
+
+.progress {
+  width: 200px;
+  height: 10px;
+  background: #555;
+}
+
+.bar {
+  width: 50%;
+  height: 100%;
+  background: #c9a54c;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+#modalImg {
+  display: block;
+  margin: 100px auto;
+  max-width: 90%;
+}
+
+.close {
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
