@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mosque of Brownwood - Future Home 2027</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root { --dark: #0f3d2e; --gold: #c9a54c; --cream: #f5f1e8; }
+    body { font-family: 'Merriweather', serif; color: #1a1a1a; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; background: var(--dark); color: white; position: sticky; top: 0; z-index: 100; }
+    .logo { font-size: 18px; font-weight: 700; }
+    nav { display: flex; gap: 30px; }
+    nav a { color: white; text-decoration: none; font-size: 13px; }
+    .btn-donate { background: var(--gold); color: var(--dark); padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: 700; }
+    .hero { background: linear-gradient(135deg, rgba(15,61,46,0.7), rgba(26,93,69,0.7)), url('https://images.unsplash.com/photo-1584551246679-0daf3d275d0f?w=1600') center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; padding: 40px; }
+    .hero-content { background: rgba(255,255,255,0.95); padding: 60px; border-radius: 8px; max-width: 650px; box-shadow: 0 20px 60px rgba(0,0,0,0.15); }
+    .hero-content h1 { font-size: 48px; color: var(--dark); margin: 20px 0; font-family: 'Montserrat'; }
+    .year { font-size: 32px; color: var(--gold); font-weight: 700; margin: 20px 0; }
+    .arabic { font-size: 16px; font-style: italic; margin: 25px 0; padding: 20px; border-left: 4px solid var(--gold); background: rgba(201,165,76,0.05); }
+    .cta { background: var(--dark); color: white; padding: 14px 40px; border: none; border-radius: 4px; cursor: pointer; font-weight: 700; margin-top: 20px; }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; padding: 80px 40px; background: var(--cream); }
+    .feature { background: white; padding: 40px; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .feature h3 { color: var(--dark); margin: 15px 0; font-family: 'Montserrat'; }
+    .feature p { font-size: 14px; color: #666; }
+    .vision { background: var(--dark); color: white; padding: 80px 40px; }
+    .vision-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 50px; max-width: 1200px; margin: 0 auto; }
+    .vision-card h2 { margin-bottom: 20px; font-family: 'Montserrat'; }
+    .vision-card p { font-size: 15px; line-height: 1.8; margin-bottom: 20px; }
+    .progress-bar { width: 100%; height: 12px; background: rgba(255,255,255,0.2); border-radius: 10px; overflow: hidden; margin: 20px 0; }
+    .progress-fill { width: 50%; height: 100%; background: var(--gold); }
+    .goal { font-size: 28px; color: var(--gold); font-weight: 700; margin-bottom: 10px; }
+    .input-email { width: 100%; padding: 12px; border: 2px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); border-radius: 4px; color: white; margin-bottom: 12px; }
+    .input-email::placeholder { color: rgba(255,255,255,0.6); }
+    .btn-sub { width: 100%; background: var(--gold); color: var(--dark); padding: 12px; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; }
+    .contact { padding: 80px 40px; background: var(--cream); }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; max-width: 1200px; margin: 0 auto; }
+    .contact-info h2 { color: var(--dark); margin-bottom: 20px; font-family: 'Montserrat'; }
+    .contact-detail { margin-bottom: 20px; }
+    .contact-detail strong { display: block; color: var(--dark); }
+    .contact-detail p { color: #666; font-size: 14px; }
+    .form-group { margin-bottom: 15px; }
+    .form-group label { display: block; font-size: 12px; font-weight: 600; color: var(--dark); margin-bottom: 6px; text-transform: uppercase; }
+    .form-group input, .form-group textarea { width: 100%; padding: 12px; border: 2px solid #ddd; border-radius: 4px; font-family: 'Merriweather'; }
+    .btn-submit { width: 100%; background: var(--dark); color: white; padding: 12px; border: none; border-radius: 4px; font-weight: 700; cursor: pointer; margin-top: 10px; }
+    footer { background: var(--dark); color: white; padding: 40px; text-align: center; border-top: 4px solid var(--gold); }
+    @media (max-width: 768px) { .hero-content { padding: 30px; } .hero-content h1 { font-size: 32px; } .contact-grid { grid-template-columns: 1fr; } nav { flex-direction: column; gap: 15px; } }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">🕌 Mosque of Brownwood</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
+    <button class="btn-donate">Donate</button>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-content">
+    <p style="color: var(--gold); font-weight: 600; font-size: 14px;">Future Home of</p>
+    <h1>Mosque of Brownwood</h1>
+    <div class="year">2027</div>
+    <div class="arabic">ومن بنى مسجداً لله بنى الله له بيتاً في الجنة</div>
+    <p style="font-size: 14px; color: #666; margin: 15px 0;">"Whoever builds a mosque for Allah, Allah will build a similar mosque for him in Paradise."</p>
+    <button class="cta">Learn More About Our Vision</button>
+  </div>
+</section>
+
+<section class="features">
+  <div class="feature">
+    <h3>🕯️ A Place of Worship</h3>
+    <p>A welcoming space for prayer, reflection, and spiritual growth for generations to come.</p>
+  </div>
+  <div class="feature">
+    <h3>👥 A Place for Community</h3>
+    <p>Uniting families and individuals through faith, service, and meaningful connections.</p>
+  </div>
+  <div class="feature">
+    <h3>❤️ A Legacy of Good</h3>
+    <p>Building a lasting foundation for education, outreach, and charity in Brownwood.</p>
+  </div>
+  <div class="feature">
+    <h3>🏗️ Be Part of the Build</h3>
+    <p>Your support today helps lay the foundation for a stronger community tomorrow.</p>
+  </div>
+</section>
+
+<section class="vision" id="vision">
+  <div class="vision-grid">
+    <div class="vision-card">
+      <h2>Our Vision</h2>
+      <p>To establish a beautiful and welcoming mosque that serves the spiritual, educational, and social needs of Brownwood and the surrounding communities for generations to come.</p>
+      <button class="cta" style="width: 100%;">About Our Project</button>
+    </div>
+
+    <div class="vision-card">
+      <h2>Help Us Reach Our Goal</h2>
+      <div class="goal">$1,250,000</div>
+      <p style="font-size: 13px;">of $2,500,000 Goal</p>
+      <div class="progress-bar"><div class="progress-fill"></div></div>
+      <p style="font-size: 13px;">50% Complete</p>
+      <p style="font-size: 14px; margin-top: 15px;">Every donation brings us closer to making this dream a reality.</p>
+      <button class="btn-donate" style="width: 100%; margin-top: 15px;">Donate Now</button>
+    </div>
+
+    <div class="vision-card">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to receive updates on our progress, events, and ways to get involved.</p>
+      <input type="email" class="input-email" placeholder="Your email address">
+      <button class="btn-sub">Subscribe</button>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <div class="contact-detail">
+        <strong>📍 Address</strong>
+        <p>123 Community Way<br>Brownwood, TX 76801</p>
+      </div>
+      <div class="contact-detail">
+        <strong>📞 Phone</strong>
+        <p>(325) 123-4567</p>
+      </div>
+      <div class="contact-detail">
+        <strong>✉️ Email</strong>
+        <p>info@mosquebrownwood.org</p>
+      </div>
+    </div>
+
+    <form class="contact-form" onsubmit="alert('Thank you! We will get back to you soon.'); return false;">
+      <h2>Send us a Message</h2>
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" required>
+      </div>
+      <div class="form-group">
+        <label>Your Email</label>
+        <input type="email" required>
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2024 Mosque of Brownwood. All rights reserved.</p>
+  <p>Building our future together | 2027</p>
+</footer>
+
+</body>
+</html>
